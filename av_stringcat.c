@@ -14,7 +14,7 @@ char* wordcat(int num, ...) {
 
     for(i = 0; i < num; i++){
         mem+=strlen(va_arg(valist, char*));
-        mem+=1;
+        mem+=1; // add some extra memory for the space
     }
 
     va_end(valist);
