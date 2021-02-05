@@ -17,8 +17,7 @@ int isEven(int x){
 void main(){
     int nums[] = {10318, 1048312, 4838104, 281304};
     
-    int i;
-    for(i=0; i < NELEMS(nums); i++){
+    for(int i=0; i < NELEMS(nums); i++){
         if(isEven(nums[i])){
             printf("%i is even\n", nums[i]);
         } else{
