@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define NELEMS(x)  (sizeof(x) / sizeof((x)[0]))
+#define NELEMS(x) (sizeof(x) / sizeof((x)[0]))
 
 int isprime(int x){
     if(x == 0){
