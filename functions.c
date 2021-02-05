@@ -4,7 +4,7 @@
 
 #define NELEMS(x) (sizeof(x) / sizeof((x)[0]))
 
-int isprime(int x){
+int isEven(int x){
     if(x == 0){
         return 0;
     } else if(x%2 ==0){
@@ -19,10 +19,10 @@ void main(){
     
     int i;
     for(i=0; i < NELEMS(nums); i++){
-        if(isprime(nums[i])){
-            printf("%i is prime\n", nums[i]);
+        if(isEven(nums[i])){
+            printf("%i is even\n", nums[i]);
         } else{
-            printf("%i is not prime\n", nums[i]);
+            printf("%i is odd\n", nums[i]);
         }
     }
 }
