@@ -15,5 +15,17 @@ void fizzbuzz(int start, int stop){
 }
 
 void main(){
-    fizzbuzz(38,20512);
+    int start;
+    int stop;
+
+    char* buffer;
+    printf("Give a start value");
+    fgets(buffer, 1000, stdin);
+    start = (int) buffer;
+
+    printf("Give an stop value");
+    fgets(buffer, 1000, stdin);
+    stop = (int) buffer;
+
+    fizzbuzz(start,stop);
 }
