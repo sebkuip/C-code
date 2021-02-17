@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void fizzbuzz(int start, int stop){
     for(int i = start; i<=stop;i++){
@@ -18,14 +19,16 @@ void main(){
     int start;
     int stop;
 
-    char* buffer;
-    printf("Give a start value");
-    fgets(buffer, 1000, stdin);
-    start = (int) buffer;
+    char buffer[1000];
+    printf("Give a start value: ");
+    fgets(buffer, sizeof(buffer), stdin);
+    start = strtol(buffer, NULL, 10);
+    fflush(stdin);
 
-    printf("Give an stop value");
-    fgets(buffer, 1000, stdin);
-    stop = (int) buffer;
+    printf("Give an stop value: ");
+    fgets(buffer, sizeof(buffer), stdin);
+    stop = strtol(buffer, NULL, 10);
+    fflush(stdin);
 
     fizzbuzz(start,stop);
 }
