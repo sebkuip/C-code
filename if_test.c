@@ -1,14 +1,13 @@
 #include <stdio.h>
 
-void main() {
-    int num = 1;
-    if(num==0){
-	    printf("num is 0");
-    }
-    else if(num==1){
-        printf("num is 1");
-    }
-    else{
-        printf("num is not 0 and not 1");
-    }
+int main() {
+	int getal = 500;
+
+	if (getal < 100) {
+		printf("Getal is kleiner dan 100");
+	}
+	else {
+		printf("Getal is %d", getal);
+	}
+	return 0;
 }
